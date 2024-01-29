@@ -1,6 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
+const tagsData = require('./data.json');
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -11,7 +12,12 @@ app.get("/", (req, res) => {
 
 app.get("/t/:tag", (req, res) => {
     const { tag } = req.params;
-    res.render('tag', { tag });
+    const data = tagsData[tag];
+    if (data) {
+        res.render('tag', { tag, data });
+    } else {
+        res.render('notfound', { tag });
+    }
 });
 
 app.get("/cats", (req, res) => {

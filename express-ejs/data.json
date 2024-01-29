@@ -1,0 +1,82 @@
+{
+    "javascript": {
+        "title": "JavaScript",
+        "followers": 9999,
+        "description": "Once relegated to the browser as one of the 3 core technologies of the web, JavaScript can now be found almost anywhere you find code. JavaScript developers move fast and push software development forward; they can be as opinionated as the frameworks they use, so let's keep it clean here and make it a place to learn from each other!",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+        "posts": [
+            {
+                "title": "Mastering JavaScript in 100 Days: A Structured Plan for Proficiency",
+                "author": "Abishek Haththakage"
+            },
+            {
+                "title": "A Beginner's Guide to Creating a RESTful API with Node.js",
+                "author": "Abishek Haththakage"
+            },
+            {
+                "title": "The Power of JavaScript Promises",
+                "author": "John Smith"
+            }
+        ]
+    },
+    "react": {
+        "title": "React.js",
+        "followers": 1200,
+        "description": "Official tag for Facebook's React JavaScript library for building user interfaces.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png",
+        "posts": [
+            {
+                "title": "What is Strict Mode in React?",
+                "author": "Code of Relevancy"
+            },
+            {
+                "title": "Build AI Template Engine to create amazing content with Next.js and ChatGPT",
+                "author": "Yuval"
+            },
+            {
+                "title": "React Hooks: A Deep Dive",
+                "author": "Jane Smith"
+            }
+        ]
+    },
+    "node": {
+        "title": "Node.js",
+        "followers": 4500,
+        "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png",
+        "posts": [
+            {
+                "title": "A Beginner's Guide to Creating a RESTful API with Node.js",
+                "author": "Abishek Haththakage"
+            },
+            {
+                "title": "Functional Programming Made Easy with TypeScript",
+                "author": "Francisco Mendes"
+            },
+            {
+                "title": "Building Real-time Applications with Socket.io",
+                "author": "John Doe"
+            }
+        ]
+    },
+    "python": {
+        "title": "Python",
+        "followers": 8000,
+        "description": "Python is a popular programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, and more.",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/2560px-Python_logo_and_wordmark.svg.png",
+        "posts": [
+            {
+                "title": "Getting Started with Python: A Beginner's Guide",
+                "author": "John Doe"
+            },
+            {
+                "title": "Python Web Scraping: A Comprehensive Guide",
+                "author": "Jane Smith"
+            },
+            {
+                "title": "Exploring Data Visualization with Python",
+                "author": "David Johnson"
+            }
+        ]
+    }
+}

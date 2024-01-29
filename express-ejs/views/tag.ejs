@@ -3,23 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= tag %> - Dev Com </title>
+    <title><%= data.title %> - Dev Com</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
+            background-color: #f2f2f2;
         }
-        
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+        }
+
         h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
             color: #333;
-            text-align: center;
-            margin-top: 50px;
+        }
+
+        h4 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin: 0;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>Tag: <%= tag %></h1>
+    <div class="container">
+        <div class="image-container">
+            <% if(data.img) { %>
+                <img src="<%= data.img %>" alt="<%= data.title %>">
+            <% } %>
+        </div>
+        <h1><%= data.title %></h1>
+        <h4><%= data.description %></h4>
+        <h4>Followers: <%= data.followers %></h4>
+        <hr>
+
+        <% for(let post of data.posts) { %>
+        <article>
+            <p><%= post.title %> - <%= post.author %></p>
+        </article>
+        <% } %>
+    </div>
 </body>
 </html>
