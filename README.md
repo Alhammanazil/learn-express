@@ -29,7 +29,7 @@ The project aims to provide a basic understanding of developing web applications
 4. Run the application:
 
     ```bash
-    npm start
+    nodemon index.js
     ```
 
-   The application will run at [http://localhost:3000](http://localhost:3000).
+   The application will run at [http://localhost:8080](http://localhost:8080).
