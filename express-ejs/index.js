@@ -9,6 +9,11 @@ app.get("/", (req, res) => {
     res.render('home');
 });
 
+app.get("/rand", (req, res) => {
+    const num = Math.floor(Math.random() * 100) + 1;
+    res.render('random', { num });
+});
+
 
 app.listen(8080, () => {
     console.log('Listening on host http://localhost:8080');
