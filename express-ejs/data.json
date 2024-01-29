@@ -43,7 +43,7 @@
         "title": "Node.js",
         "followers": 4500,
         "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png",
+        "img": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
         "posts": [
             {
                 "title": "A Beginner's Guide to Creating a RESTful API with Node.js",
@@ -63,7 +63,7 @@
         "title": "Python",
         "followers": 8000,
         "description": "Python is a popular programming language known for its simplicity and readability. It is widely used in various domains such as web development, data analysis, artificial intelligence, and more.",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/2560px-Python_logo_and_wordmark.svg.png",
+        "img": "https://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png",
         "posts": [
             {
                 "title": "Getting Started with Python: A Beginner's Guide",
