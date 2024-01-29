@@ -14,6 +14,11 @@ app.get("/t/:tag", (req, res) => {
     res.render('tag', { tag });
 });
 
+app.get("/cats", (req, res) => {
+    const cats = ['Rocket', 'Garfield', 'Stephanie', 'Wilson'];
+    res.render('cats', { cats });
+});
+
 app.get("/rand", (req, res) => {
     const num = Math.floor(Math.random() * 100) + 1;
     res.render('random', { num });
