@@ -43,7 +43,7 @@
         "title": "Node.js",
         "followers": 4500,
         "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
-        "img": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
         "posts": [
             {
                 "title": "A Beginner's Guide to Creating a RESTful API with Node.js",
