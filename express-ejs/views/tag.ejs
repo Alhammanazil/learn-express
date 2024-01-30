@@ -1,111 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= data.title %> - Dev Com</title>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <!-- <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
+<%- include('partials/header.ejs') %>
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
+    <%- include('partials/navbar.ejs') %>
 
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
+        <style>
+            .small-image {
+                width: 150px;
+                height: auto;
+            }
+        </style>
 
-        img {
-            width: 200px;
-            height: auto;
-            border-radius: 5px;
-        }
+        <div class="container">
+            <div class="image-container">
+                <% if(data.img) { %>
+                    <img src="<%= data.img %>" alt="<%= data.title %>" class="small-image">
+                    <% } %>
+            </div>
+            <h1>
+                <%= data.title %>
+            </h1>
+            <br>
+            <h4>
+                <%= data.description %>
+            </h4>
+            <br>
+            <h4>Followers: <%= data.followers %>
+            </h4>
+            <hr>
 
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        h4 {
-            font-size: 16px;
-            margin-bottom: 10px;
-            color: #666;
-        }
-
-        hr {
-            margin: 20px 0;
-            border: none;
-            border-top: 1px solid #ccc;
-        }
-
-        article {
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin: 0;
-            color: #333;
-        }
-    </style> -->
-    <% if(data.img) { %>
-        <link rel="icon" href="<%= data.img %>">
-    <% } %>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">EJS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/t/javascript">Javascript</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/rand">Random</a>
-            </li>
-          </ul>
+            <% for(let post of data.posts) { %>
+                <article>
+                    <p>
+                        <%= post.title %> - <%= post.author %>
+                    </p>
+                </article>
+                <% } %>
         </div>
-      </nav>
-      <br>
 
-
-
-    <div class="container">
-        <div class="image-container">
-            <% if(data.img) { %>
-                <img src="<%= data.img %>" alt="<%= data.title %>">
-            <% } %>
-        </div>
-        <h1><%= data.title %></h1>
-        <h4><%= data.description %></h4>
-        <h4>Followers: <%= data.followers %></h4>
-        <hr>
-
-        <% for(let post of data.posts) { %>
-        <article>
-            <p><%= post.title %> - <%= post.author %></p>
-        </article>
-        <% } %>
-    </div>
-    <script src="/js/bootstrap-.min.js"></script>
-</body>
-</html>
+        <%- include('partials/footer.ejs') %>

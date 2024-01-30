@@ -1,46 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cats</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
+<%- include('partials/header.ejs') %>
 
-        h1 {
-            text-align: center;
-            color: #333;
-        }
+    <%- include('partials/navbar.ejs') %>
 
-        ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex; /* BEGIN: Added display property */
-            justify-content: center; /* BEGIN: Added justify-content property */
-            flex-wrap: wrap; /* BEGIN: Added flex-wrap property */
-        }
+        <h1>Cats</h1>
 
-        li {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-right: 10px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Cats</h1>
-
-    <ul>
-        <% for (let cat of cats) { %>
-        <li><%= cat %></li>
-        <% } %>
-    </ul>
-</body>
-</html>
+        <ul>
+            <% for (let cat of cats) { %>
+                <li>
+                    <%= cat %>
+                </li>
+                <% } %>
+        </ul>
+        
+        <%- include('partials/footer.ejs') %>
